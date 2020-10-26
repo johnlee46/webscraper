@@ -31,7 +31,8 @@ class pageProcessor:
         results = self.scrapePage(web_page,element_id)
         search = results.find_all(element_type,class_=search_class)
         for result_elem in search:
-            print(result_elem, end='\n')
+            #print(result_elem, end='\n')
+            print(result_elem.text)
 
 
 
